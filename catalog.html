@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
+    integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"> </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <link href="stylesheet.css" rel="stylesheet" type="text/css">
+  <title>N Cell 75 - Home</title>
+</head>
+
+<body class="container">
+  <!-- Bootstrap 4 Navigation bar, I learned allot from w3schools.com. Not a functional menu or links, it's just for the idea -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="home.html">Nelson 75 Cell</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item ">
+          <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="shipform.html">Shipment</a>
+        </li>
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Services</a>
+
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+            <a class="dropdown-item" href="#">Service Plan</a>
+            <a class="dropdown-item" href="#">Pay as you go</a>
+            <a class="dropdown-item" href="#">Phone Specials</a>
+         
+        </div>
+        </li>
+       
+        <li class="nav-item">
+          <a class="nav-link active" href="catalog.html">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+       
+        <div class="wrapper" id="cartTop" onclick="window.location.href = 'cart.html';">
+                <div class="cart-nav">
+                  <div class="icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Cart</span>
+                  </div>
+                  <div class="item-count">0</div>
+                </a>
+                </div>
+          
+      </ul>
+    </div> 
+  </nav>
+  
+  <!-- backgroound animates-->
+  <br>
+  <div class="bg-animate">
+
+  <!-- Image Slider starts here -->
+  <div id="slideBar" class="image-container">
+    <div class="slide">
+    
+        <img src=
+"images/slide1.jpg">
+    </div>
+    <div class="slide">
+       
+        <img src=
+"images/slide2.jpg">
+    </div>
+    <div class="slide">
+       
+        <img src=
+"images/slide3jpg.jpg">
+    </div>
+
+    <!-- Next and Previous icon to change images -->
+    <a class="previous" onclick="moveSlides(-1)">
+        <i class="fa fa-chevron-circle-left"></i>
+    </a>
+    <a class="next" onclick="moveSlides(1)">
+        <i class="fa fa-chevron-circle-right"></i>
+    </a>
+</div>
+<br>
+
+<div style="text-align:center">
+    <span class="footerdot" 
+        onclick="activeSlide(1)">
+    </span>
+    <span class="footerdot"
+        onclick="activeSlide(2)">
+    </span>
+    <span class="footerdot" 
+        onclick="activeSlide(3)">
+    </span>
+</div>
+ 
+  <div class="divBtn">
+    <button id="btn" type="button" class="btn btn-outline-dark">Hide Top Ad</button>
+    <button id="btn2" type="button" class="btn btn-outline-dark">Show Top Ad</button>
+  </div>
+  <br>
+
+
+  
+  <div class="wrapper">
+   
+     
+    
+    <div class="card">
+      <img src="images/blackberry-style.jpeg" alt="">
+      <div class="content">
+        <div class="row">
+          <div class="details">
+            <span>Blackberry</span>
+            <p>64GB dual Chip Sim</p>
+          </div>
+          <div class="price">R5400</div>
+        </div>
+        <div class="buttons">
+          <button onclick="window.location.href='product2.html';">View More</button>
+          <button class="cart-btn cart1">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/Boost-mobile.jpeg" alt="">
+      <div class="content">
+        <div class="row">
+          <div class="details">
+            <span>Boost Mobile</span>
+            <p>32GB Dual Sim</p>
+          </div>
+          <div class="price">R6400</div>
+        </div>
+        <div class="buttons">
+          <button onclick="window.location.href='product3.html';">View More</button>
+          <button class="cart-btn cart2">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/iphone4.jpeg" alt="">
+      <div class="content">
+        <div class="row">
+          <div class="details">
+            <span>Iphone4</span>
+            <p>128GB dual chip sim</p>
+          </div>
+          <div class="price">R8400</div>
+        </div>
+        <div class="buttons">
+          <button onclick="window.location.href='product4.html';">View More</button>
+          <button class="cart-btn cart 3">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+   
+  </div>
+
+  <div class="wrapper">
+  
+    
+    <div class="card">
+      <img src="images/LGTribute2.jpeg" alt="">
+      <div class="content">
+        <div class="row">
+          <div class="details">
+            <span>LG Tribute2</span>
+            <p>64GBDual Chip sim</p>
+          </div>
+          <div class="price">R7400</div>
+        </div>
+        <div class="buttons">
+          <button onclick="window.location.href='product5.html';">View More</button>
+          <button class="cart-btn cart 4">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/NET10-SIII.jpeg" alt="">
+      <div class="content">
+        <div class="row">
+          <div class="details">
+            <span>NET10-SIII</span>
+            <p>64GBDual Chip sim</p>
+          </div>
+          <div class="price">R6400</div>
+        </div>
+        <div class="buttons">
+          <button onclick="window.location.href='product6.html';">View More</button>
+          <button class="cart-btn cart 5">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/optimus-t500.jpeg" alt="">
+      <div class="content">
+        <div class="row">
+          <div class="details">
+            <span>Optimus-t500</span>
+            <p>32GB dual chip sim</p>
+          </div>
+          <div class="price">R6300</div>
+        </div>
+        <div class="buttons">
+          <button onclick="window.location.href='product1.html';">View More</button>
+          <button class="cart-btn cart 6">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+   
+  </div>
+  <script src="script.js"></script>
+
+  <!-- Testimonial and Hover Table below-->
+  <div class="container">
+     
+    <div class="shadow p-3 mb-3 bg-white rounded">
+<div class="containerR">
+  <h1>Testimonial</h1>
+  <img src="images/testimon.jpg" alt="Avatar" style="width:90px">
+  <p class="greyfont"><span class="Name">Naomi Ntando</span><br> Customer at N Cell</p>
+  <p class="greyfont2">"N Cell delivered the goods on time and everything was working. No problems with the products I received and the customer service was great."</p>
+
+</div>
+</div>
+</div>
+
+<!-- Here is a hover table-->
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col"></th>
+      <th scope="col">Pre-Paid</th>
+      <th scope="col">Pay per Month</th>
+      <th scope="col">Phone</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"></th>
+      <td>R6400</td>
+      <td>R760</td>
+      <td>Blackberry</td>
+    </tr>
+    <tr>
+      <th scope="row"></th>
+      <td>R5300</td>
+      <td>R450</td>
+      <td>Optimus</td>
+    </tr>
+
+  </tbody>
+</table>
+
+<!-- The images here is shaped rounded, thumbnail and circle and responsive, 
+    the class for the column is set to 'col-sm-6 ' it is bigger than the other columns that I used for the catalogue -->
+
+<!-- a Horizontal Form starts here-->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col">
+      <p class="text-center">Please fill in the form below:</p>
+    </div>
+  </div>
+  <form class="form-horizontal">
+    <div class="form-group">
+      <label for="firstname" class="col-sm-2 control-label">First Name</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="firstname" placeholder="Enter First Name">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="emailform" class="col-sm-2 control-label">Email address</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="emailform" placeholder="Enter email address">
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <div class="checkbox">
+          <label><input type="checkbox"> Remember me</label>
+
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-default">Sign in</button>
+      </div>
+    </div>
+
+  </form>
+  </div>
+  </div>
+  
+  <footer>
+    <div id="footer">
+      <p> &copy; N Cell.&nbsp;&nbsp; All Rights Reserved.&nbsp;&nbsp; Proudly created by RC</p>
+      <h2>Follow Us:</h2>
+      <a href="https://www.facebook.com" target="blank"><img src="images/facebook.jpg" alt="facebook"
+          class="footer-img"></a>
+      <a href="https://twitter.com" target="blank"><img src="images/twitter.jpg" alt="Twitter" class="footer-img"></a>
+    </div>
+
+  </footer>
+  <!-- bg-animation -->
+</div>
+  <!-- The script follows below for jquery-->
+  <script type="text/javascript" src="slide.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+
+  <script>
+    //Hide the ad or image at the top, and show, I used a button:
+
+    $(document).ready(function () {
+
+      $('#btn2').hide();
+
+      $('#btn').on('click', function () {
+        $('#slideBar').hide();
+      });
+      $('#btn').on('click', function () {
+        $('#btn').hide();
+      });
+      $('#btn').on('click', function () {
+        $('#btn2').show();
+      });
+      $('#btn2').on('click', function () {
+        $('#slideBar').show();
+      });
+      $('#btn2').on('click', function () {
+        $('#btn').show();
+
+      });
+      $('#btn2').on('click', function () {
+        $('#btn2').hide();
+      });
+     
+    });
+       
+
+  </script>
+</body>
+
+</html>
